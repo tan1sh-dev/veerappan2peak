@@ -1,0 +1,16 @@
+{
+ "width": 769,
+ "height": 767,
+ "lonMin": 137.3891244142941,
+ "lonMax": 137.4908755857059,
+ "latMin": -4.650743269488209,
+ "latMax": -4.54925673051179,
+ "widthM": 6000.000000001286,
+ "heightM": 6003.734075771287,
+ "min": -4532.259765625,
+ "max": -4342.23486328125,
+ "bodyRadius": 3389500,
+ "source": "https://trek.nasa.gov/mars/trekarcgis/rest/services/Gale_DEM_SMG_1m/ImageServer/exportImage",
+ "service": "Gale_DEM_SMG_1m",
+ "title": "MRO HiRISE/CTX Gale Crater DEM (1 m/px), resampled to ~7.8 m"
+}

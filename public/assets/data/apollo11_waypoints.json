@@ -1,0 +1,37 @@
+[
+ {
+  "name": "Lunar Module Descent Stage",
+  "lon": 23.47334,
+  "lat": 0.67333,
+  "description": "Apollo 11 Lunar Module, Eagle The Apollo Lunar Module (LM) was a lunar lander that carried astronauts to the surface of the Moon and returned them back to lunar orbit. The lunar module consisted of an ascent stage attached on top of a descent stage. The engine of the descent stage carried the crew of two astronauts down to the lunar surface. When the astronauts were ready Lunar Module Descent Stage (Apollo 17) to leave the Moon, the descent stage served as a launchpad for the ascent stage’s launch carrying the astronauts back to lunar orbit and return to the Apollo Command Module. The descent stage remained on the lunar surface, where it can still be seen from lunar orbit.",
+  "descriptionSource": "https://trek.nasa.gov/assets/bookmarks/moon/apollo-11/lmds/lunar_module_descent_stage.html"
+ },
+ {
+  "name": "Passive Seismic Experiment",
+  "lon": 23.47334,
+  "lat": 0.67238,
+  "description": "Astronauts on the Apollo 11, 12, 14, 15, and 16 missions set up and left seismometers on the surface of the Moon. These instruments detected and measured Moonquakes. Some Moonquakes are caused by meteoroids crashing into the surface of the Moon. Others are caused by geologic activity inside the Moon. Measuring the seismic waves of Moonquakes help us to understand the internal structure and composition of the Moon. Apollo 11 PSE",
+  "descriptionSource": "https://trek.nasa.gov/assets/bookmarks/moon/apollo-11/pse/passive_seismic_experiment.html"
+ },
+ {
+  "name": "Lunar Ranging Retroreflector",
+  "lon": 23.47338,
+  "lat": 0.67256,
+  "description": "Apollo 11 LRR Astronauts on the Apollo 11, 14, and 15 missions set up and left sophisticated mirror systems known as Laser Ranging Retroreflectors (LRRs) on the surface of the Moon. When a laser pulse is shot out of a telescope on Earth and hits an LRR, the reflectors send the pulse straight back where it came from. The round-trip travel time pinpoints the Moon's distance with staggering precision. Through decades of data collected using this means, it is well known that the Moon is spiraling away from Earth a rate of 3.8 cm per year. LRR measurements have helped establish a coordinate system for mapping the Moon, helped study the structure and composition of the Moon, and provided tests of ",
+  "descriptionSource": "https://trek.nasa.gov/assets/bookmarks/moon/apollo-11/lrr/laser_ranging_retroreflector.html"
+ },
+ {
+  "name": "Little West Crater",
+  "lon": 23.47576,
+  "lat": 0.67345,
+  "description": "Little West Crater. Credit: NASA The plan for Apollo 11 had it landing in an area with no significant nearby craters. This was to provide as flat and safe a landing opportunity as possible. It also meant that the astronauts would be largely limited to collecting samples from the top surface layer of the Moon. But when Armstrong had to divert the Lunar Module’s descent away from the dangerous boulder fields of West Crater, he ended up landing the spacecraft only 45 meters away from a smaller crater, 35 meters across, that became known as Little West Crater. The path of Armstrong’s footprints is visible, showing where he walked to the edge of the crater and collected samples of deeper rock tha",
+  "descriptionSource": "https://trek.nasa.gov/assets/bookmarks/moon/apollo-11/little-west-crater/little_west_crater.html"
+ },
+ {
+  "name": "West Crater",
+  "lon": 23.4912,
+  "lat": 0.6698,
+  "description": "West Crater Apollo 11 was originally planned to land on as flat and smooth a site as possible. But various uncertainties associated with the first human descent to the Moon’s surface led to the lunar module Eagle flying a path further to the west than originally intended. As Commander Neil Armstrong looked out the window, he saw the lunar module’s flight computer was taking them down toward a crater 180 meters across and surrounded by a field of large boulders. Realizing they could not land in or too near to West Crater, Armstrong took manual control of the Lunar Module and flew it further west until he found a safe location for landing, with only seconds of fuel remaining.",
+  "descriptionSource": "https://trek.nasa.gov/assets/bookmarks/moon/apollo-11/west-crater/west_crater.html"
+ }
+]

@@ -1,0 +1,100 @@
+[
+ {
+  "name": "Bradbury Landing",
+  "lon": 137.4416334989196,
+  "lat": -4.5894669521344875,
+  "description": "Goulburn rock outcrop: conglomerated fluvial sediment at Bradbury Landing Bradbury Landing is the landing site for the Curiosity rover within Gale Crater. It is named after writer Ray Bradbury and is located in Aeolis Palus, a flat plain between Gale Crater's northern rim and central peak. Aeolis Palus lies in what appears to be the wash debris of Peace Vallis, an outflow channel flowing down the slope of Gale Crater's rim. Shortly after landing, Curiosity found evidence supporting this view in the form of rock outcrops in the immediate area composed of conglomerated fluvial sediments, the type of formation that would form in a vigorously flowing stream.",
+  "descriptionSource": "https://trek.nasa.gov/mars/jpl/assets/features/curiosity/bradbury.html"
+ },
+ {
+  "name": "The Rocknest",
+  "lon": 137.44793242441716,
+  "lat": -4.5900562493101855,
+  "description": "'Rocknest' From Sol 52 Location Leaving Bradbury Landing, Curiosity drove east across the plain of Aeolis Palus. Between the rover’s 55th and 100th sols on Mars (a sol is a Martian day, 24 hours, 39 minutes, and 35.244 seconds), Curiosity stopped in a sand pit that became known as the Rocknest. At this location, Curiosity used its scoop and ChemMin X-ray diffraction analyzer to perform its first soil analysis on Mars. In these tests, Curiosity found abundant, easily accessible water at 1.5 to 3 weight percent.",
+  "descriptionSource": "https://trek.nasa.gov/mars/jpl/assets/features/curiosity/rocknest.html"
+ },
+ {
+  "name": "Glenelg",
+  "lon": 137.4483359056419,
+  "lat": -4.590008563147457,
+  "description": "Yellowknife Bay area of Glenelg. NASA/JPL-Caltech/MSSS Continuing eastward, Curiosity spent over 200 sols in a region known as Glenelg. This area marks a junction of 3 different terrain types and provided Curiosity with the opportunity to examine bedrock that was being exposed as the wind eroded the overlying mudstone. At Glenelg, in a shallow depression known as Yellowknife Bay, Curiosity made use of its drill to obtain samples from mudstone sedimentary rock formations that were named John Klein and Cumberland. The trip to Glenelg was a significant detour for Curiosity on its journey to Mt. Sharp. But it was selected for investigation because previous observations from orbit by the Mars Rec",
+  "descriptionSource": "https://trek.nasa.gov/mars/jpl/assets/features/curiosity/glenelg.html"
+ },
+ {
+  "name": "Darwin Outcrop",
+  "lon": 137.4262786310351,
+  "lat": -4.607073708817739,
+  "description": "Darwin Outcrop with Mt. Sharp in the background. Credit: NASA/JPL-Caltech After leaving Glenelg, Curiosity turned southwest on its long journey to the slopes of Mt. Sharp. Along the way, researchers had identified several interesting areas of rock outcrops that would serve as waypoints for scientific investigation along the way. The first of these, Darwin Outcrop was visited by Curiosity from sols 392-396. The sandstone outcrop contained pebbles rounded and deposited by flowing water. Later, intrusive veins of water-related minerals penetrated cracks in the sandstone. Findings at Darwin Outcrop broadened the area demonstrated to have been altered by flowing water, and continued to reveal the",
+  "descriptionSource": "https://trek.nasa.gov/mars/jpl/assets/features/curiosity/darwin_outcrop.html"
+ },
+ {
+  "name": "The Kimberly",
+  "lon": 137.40216860235773,
+  "lat": -4.6363373650923405,
+  "description": "Curiosity selfie at the Windjana drilling site. NASA/JPL-CALTECH (EDIT BY DOUG ELLISON/JPL) From sols 581 to sol 630, Curiosity examined a complex area of outcrops named the Kimberly. This formation consists of three distinct units. Three peaks mark the topmost unit. Beneath them is a smooth-textured unit. Below that is a striated unit. A location named Windjana, on the southeast foot of the southern peak in the Kimberly was the site for Curiosity’s next drilling operation. The Kimberly, Curiosity rover, and its tracks imaged by the HiRISE camera on MRO, Credit: NASA/JPL/University of Arizona As seen from orbit, the Kimberly seemed to offer interesting similarities to what was found if the Y",
+  "descriptionSource": "https://trek.nasa.gov/mars/jpl/assets/features/curiosity/kimberly.html"
+ },
+ {
+  "name": "Pahrump Hills",
+  "lon": 137.37724353716703,
+  "lat": -4.66241193815176,
+  "description": "Pahrump Hills outcrop and surrounding terrain. NASA/JPL-Caltech/MSSS On sol 753 of its mission, Curiosity arrived at the base of Mt. Sharp. The foothills at the base of the mountain here are named the Pahrump Hills. These are part of the Murray formation, which underlies all of the other exposed rock layers of Mt Sharp. Researchers expect that this represents the oldest geological unit that Curiosity will encounter in its journey. Within the Pahrump Hills, Curiosity drilled at three sites, Confidence Hills (sol 759), Mojave (sol 882), and Telegraph Peak (sol 908). At the Mojave site, a preliminary analysis indicated the presence of jarosite, which would point to rock forming in more acidic w",
+  "descriptionSource": "https://trek.nasa.gov/mars/jpl/assets/features/curiosity/pahrump_hills.html"
+ },
+ {
+  "name": "Marias Pass",
+  "lon": 137.37140256639952,
+  "lat": -4.667938835464834,
+  "description": "Marias Pass with older mudstone (center) in contact with overlying sandstone – credit NASA/JPL/MSSS Leaving the Pahrump Hills and continuing southwest, Curiosity made its way to Marias Pass. This region marks the transition between two very different rock units. The Murray formation, which includes the Pahrump Hills is composed of mudstone presumably deposited on a lake floor. Above it is the Stimson formation which formed from wind-deposited sand. Drilling into Murray formation rock just below Marias Pass on Sol 1060, Opportunity obtained samples of a silica mineral called tridymite. This was surprising, since tridymite is formed in association with explosive silicic volcanism that is commo",
+  "descriptionSource": "https://trek.nasa.gov/mars/jpl/assets/features/curiosity/marias_pass.html"
+ },
+ {
+  "name": "Bagnold Dunes",
+  "lon": 137.36569185998553,
+  "lat": -4.6790747129721195,
+  "description": "Curiosity self-portrait on the edge of Namib Dune in the Bagnold Dunes – credit NASA/JPL/MSSS After driving across the rough, washboard surface of Stimson sandstone, Curiosity reached the edge of the Bagnold Dunes on Sol 1174. Extending northeast to southwest, this active dune field features wind-driven dunes whose movement can be seen from orbit in MRO’s HiRISE camera. Ever since Curiosity’s landing, the Bagnold dunes have presented a barrier between the rover and its goal of the higher slopes of Mt. Sharp. Carefully advancing to the edge of the dune field, Curiosity sampled the sand and then continued southwest staying off the edge of the sand.",
+  "descriptionSource": "https://trek.nasa.gov/mars/jpl/assets/features/curiosity/bagnold_dunes.html"
+ },
+ {
+  "name": "Bagnold Dunes West End",
+  "lon": 137.3577831264674,
+  "lat": -4.6785619391253634,
+  "description": "Curiosity self-portrait on the Naukluft Plateau – credit NASA/JPL/MSSS By Sol 1368, Curiosity had driven to the western reaches of the Bagnold Dunes. All along, the Curiosity team had been mindful of the hazards of sand, and how Spirit’s mission ended when it became stuck in sand in the Columbia Hills. But now, after a long westward drive along the Naukluft Plateau off the north edge of the dunes, a clear path was available for Curiosity to ascend the slopes of Mt Sharp to the south. Curiosity turned left and began heading south and up toward the Murray Buttes.",
+  "descriptionSource": "https://trek.nasa.gov/mars/jpl/assets/features/curiosity/bagnold_dunes_west_end.html"
+ },
+ {
+  "name": "Murray Buttes",
+  "lon": 137.35334,
+  "lat": -4.6954,
+  "description": "Mastcam mosaic showing cross-bedded sandstone layers in one of the Murray Buttes (NASA/JPL/MSSS/Ken Kremer/kenkremer.com/Marco Di Lorenzo). After rounding the western edge of the Bagnold Dudes, Curiosity continued south to the Murray Buttes. The mudstone of the Murray Formation that Curiosity has been traversing tells a story of alternating flooding and drying of the ancient lakebed in Gale Crater. The Murray Buttes tell a story of one of the dry periods in this area. They are composed of layered, cross-bedded sandstone originally deposited by wind as migrating sand dunes. The buttes are spectacular landmarks leading south and up the slope of Mt Sharp. Looking ahead from here, the rover team",
+  "descriptionSource": "https://trek.nasa.gov/mars/jpl/assets/features/curiosity/murray_buttes.html"
+ },
+ {
+  "name": "Bagnold Dunes South",
+  "lon": 137.35722,
+  "lat": -4.7112,
+  "description": "“Curiosity Navcam image of linear dunes in southern segment of Bagnold Dunes (NASA/JPL-Caltech). After leaving the Murray Buttes behind, Curiosity skirted a southern extension of the Bagnold Dunes. This dune field was noticeably different from what Curiosity had encountered in the north. The northern dune field was characterized by arc-shaped barchan dunes indicating that the wind typically blows north to south in that area. But in the southern dune field, the dunes were linear in shape. Researchers suspected that these could be seif dunes, which could indicate frequently changing wind direction.",
+  "descriptionSource": "https://trek.nasa.gov/mars/jpl/assets/features/curiosity/bagnold_dunes_south.html"
+ },
+ {
+  "name": "Vera Rubin Ridge",
+  "lon": 137.36832,
+  "lat": -4.72053,
+  "description": "Fine layering revealed in this Remote Micro-Imager mosaic of Vera Rubin Ridge (NASA/JPL-Caltech/LANL/CESR) On Sol 1741, Curiosity was looking across a small patch of sand at the base of Vera Rubin Ridge. From this vantage, Curiosity’s Remote Micro-Imager provided stunning views of fine layering in the face of the ridge. This raised ridge is about 200 meters wide and extends about 6.5 kilometers from northeast to southwest, approximately parallel to the Bagnold Dunes. Observations from orbit using the CRISM spectrometer aboard the Mars Reconnaissance Orbiter revealed the ridge to be rich in the mineral hematite. This iron oxide mineral forms in association with water, and close study of this ",
+  "descriptionSource": "https://trek.nasa.gov/mars/jpl/assets/features/curiosity/vera_rubin_ridge.html"
+ },
+ {
+  "name": "Top of Vera Rubin Ridge",
+  "lon": 137.37273,
+  "lat": -4.72369,
+  "description": "Curiosity continued to the southeast along the base of Vera Rubin Ridge searching for a slope shallow enough for it to make the climb up to the broad, flat crest of the ridge. Along the way, it studied the transition from the now-familiar mudstone of the Murray Formation at the ridge’s base to an array of new rock types on the face of the ridge above. On Sol 1796, Curiosity turned south and headed toward an accessible-looking rock ramp heading up the ridge. It started climbing up the ridge’s flank, and on Sol 1809, it made the transition to driving up the bedrock of Vera Rubin Ridge. Climbing onto Vera Rubin Ridge on Sol 1809. Credit NASA / JPL / Sean Doran The ascent to the top of the ridge",
+  "descriptionSource": "https://trek.nasa.gov/mars/jpl/assets/features/curiosity/top_of_vera_rubin_ridge.html"
+ },
+ {
+  "name": "Hematite Hotspot",
+  "lon": 137.38036,
+  "lat": -4.72476,
+  "description": "After climbing to the top of Vera Rubin Ridge, Curiosity proceeded south across the width of the broad flat ridgetop. It then turned northeast to continue its exploration of the ridge. Throughout this investigation, the rover remained hampered by a non-functioning drill. Along the way, engineers devised a way to operate the drill using the using pressure from the arm to press the drill into the rock instead of using the broken drill feed mechanism. Two attempts at drilling holes this way were made on Sols 1977 and 1984. While both attempts succeeded in drilling holes, the rock proved to be too hard to go deep enough to get retrievable samples. Curiosity continued northeast along the ridgetop",
+  "descriptionSource": "https://trek.nasa.gov/mars/jpl/assets/features/curiosity/hematite_hotspot.html"
+ }
+]

@@ -1,0 +1,69 @@
+{
+  "name": "veerappan-space-explorer",
+  "productName": "VEERAPPAN Space Explorer",
+  "version": "1.0.0",
+  "description": "VEERAPPAN - Space Explorer: a Moon and Mars exploration and mission-design game built on real NASA data.",
+  "main": "electron/main.cjs",
+  "type": "module",
+  "author": "Tanish",
+  "license": "MIT",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "start": "vite build && electron .",
+    "electron": "electron .",
+    "fetch-data": "node tools/fetch-nasa-data.mjs",
+    "optimize-models": "node tools/optimize-models.mjs",
+    "test": "vitest run",
+    "dist": "vite build && electron-builder --win portable nsis",
+    "play": "node tools/play.mjs"
+  },
+  "devDependencies": {
+    "@gltf-transform/core": "4.1.1",
+    "@gltf-transform/extensions": "4.1.1",
+    "@gltf-transform/functions": "4.1.1",
+    "draco3dgltf": "^1.5.7",
+    "electron": "38.2.0",
+    "electron-builder": "26.0.12",
+    "geotiff": "2.1.3",
+    "meshoptimizer": "0.22.0",
+    "sharp": "^0.33.5",
+    "vite": "6.3.5",
+    "vitest": "3.2.4"
+  },
+  "dependencies": {
+    "three": "0.170.0"
+  },
+  "build": {
+    "appId": "org.spaceapps.veerappan",
+    "productName": "VEERAPPAN Space Explorer",
+    "directories": {
+      "output": "release"
+    },
+    "files": [
+      "dist/**/*",
+      "electron/**/*",
+      "package.json"
+    ],
+    "win": {
+      "target": [
+        "portable",
+        "nsis"
+      ],
+      "icon": "build/icon.png"
+    },
+    "portable": {
+      "artifactName": "VEERAPPAN-Space-Explorer-${version}-portable.exe"
+    },
+    "nsis": {
+      "oneClick": false,
+      "allowToChangeInstallationDirectory": true,
+      "artifactName": "VEERAPPAN-Space-Explorer-${version}-setup.exe"
+    }
+  },
+  "allowScripts": {
+    "electron@38.2.0": true,
+    "esbuild@0.25.12": true,
+    "electron-winstaller@5.4.0": true
+  }
+}

@@ -1,0 +1,308 @@
+{
+ "generated": "2026-11-05",
+ "license": "NASA content is generally not subject to copyright in the United States (NASA Media Usage Guidelines). Credit: NASA and the missions listed. Use of NASA data does not imply NASA endorsement.",
+ "items": [
+  {
+   "retrieved": "2026-11-05",
+   "id": "terrain/mars_gale_core",
+   "kind": "DEM (real elevation, metres)",
+   "title": "MRO HiRISE/CTX Gale Crater DEM (1 m/px), resampled to ~7.8 m",
+   "source": "https://trek.nasa.gov/mars/trekarcgis/rest/services/Gale_DEM_SMG_1m/ImageServer",
+   "query": "bbox=137.3891244142941,-4.65071170926073,137.4908755857059,-4.549288290739269&size=769,767&format=tiff&pixelType=F32&noDataInterpretation=esriNoDataMatchAny&interpolation=RSP_BilinearInterpolation",
+   "notes": "Gale DEM served by Mars Trek.",
+   "stats": {
+    "min": -4532.3,
+    "max": -4342.2,
+    "widthM": 6000,
+    "heightM": 6004,
+    "grid": "769x767"
+   }
+  },
+  {
+   "retrieved": "2026-11-05",
+   "id": "terrain/mars_gale_far",
+   "kind": "DEM (real elevation, metres)",
+   "title": "MGS MOLA + Mars Express HRSC blended DEM (200 m/px)",
+   "source": "https://trek.nasa.gov/mars/trekarcgis/rest/services/Mars_MOLA_blend200ppx_HRSC_DEM_clon0dd_200mpp_lzw/ImageServer",
+   "query": "bbox=136.67686621441152,-5.360675638910961,138.20313378558848,-3.839324361089038&size=385,384&format=tiff&pixelType=F32&noDataInterpretation=esriNoDataMatchAny&interpolation=RSP_BilinearInterpolation",
+   "notes": "Served by Mars Trek.",
+   "stats": {
+    "min": -4667.1,
+    "max": 722,
+    "widthM": 90000,
+    "heightM": 90056,
+    "grid": "385x384"
+   }
+  },
+  {
+   "retrieved": "2026-11-05",
+   "id": "textures/mars_gale_core.jpg",
+   "kind": "orthoimage (real)",
+   "title": "MRO HiRISE mosaic of the Curiosity landing area (grayscale)",
+   "source": "https://trek.nasa.gov/mars/trekarcgis/rest/services/curiosity_hirise_mosaic/ImageServer",
+   "query": "bbox=137.3891244142941,-4.650743269488209,137.4908755857059,-4.54925673051179&size=2048,2043&format=jpgpng",
+   "notes": "Grayscale HiRISE. The game tints it with the real Viking colour mosaic.",
+   "bbox": [
+    137.3891244142941,
+    -4.650743269488209,
+    137.4908755857059,
+    -4.54925673051179
+   ]
+  },
+  {
+   "retrieved": "2026-11-05",
+   "id": "textures/mars_gale_far.jpg",
+   "kind": "orthoimage mosaic (real, WMTS tiles stitched)",
+   "title": "Viking MDIM 2.1 colour mosaic (232 m/px)",
+   "source": "https://trek.nasa.gov/tiles/Mars/EQ/Mars_Viking_MDIM21_ClrMosaic_global_232m/1.0.0/default/default028mm/{z}/{row}/{col}.jpg",
+   "notes": " zoom 7, 4/4 tiles",
+   "bbox": [
+    136.67686621441152,
+    -5.361151619911626,
+    138.20313378558848,
+    -3.8388483800883733
+   ]
+  },
+  {
+   "retrieved": "2026-11-05",
+   "id": "textures/mars_gale_core_color.jpg",
+   "kind": "orthoimage mosaic (real, WMTS tiles stitched)",
+   "title": "Viking MDIM 2.1 colour mosaic, core area (for tinting HiRISE)",
+   "source": "https://trek.nasa.gov/tiles/Mars/EQ/Mars_Viking_MDIM21_ClrMosaic_global_232m/1.0.0/default/default028mm/{z}/{row}/{col}.jpg",
+   "notes": " zoom 8, 0/1 tiles",
+   "bbox": [
+    137.3891244142941,
+    -4.650743269488209,
+    137.4908755857059,
+    -4.54925673051179
+   ]
+  },
+  {
+   "retrieved": "2026-11-05",
+   "id": "data/curiosity_waypoints.json",
+   "kind": "Curiosity (MSL) waypoint coordinates (real)",
+   "source": "https://trek.nasa.gov/mars/trekarcgis/rest/services/curiosity_waypoints/MapServer/0/query?where=1%3D1&outFields=*&returnGeometry=true&f=json",
+   "notes": "Descriptions are NASA Trek bookmark text, quoted with attribution."
+  },
+  {
+   "retrieved": "2026-11-05",
+   "id": "data/curiosity_path.json",
+   "kind": "traverse polyline (real)",
+   "source": "https://trek.nasa.gov/mars/trekarcgis/rest/services/curiosity_path/MapServer/0/query?where=1%3D1&outFields=*&returnGeometry=true&f=json"
+  },
+  {
+   "retrieved": "2026-11-05",
+   "id": "textures/moon_globe.jpg",
+   "kind": "orthoimage mosaic (real, WMTS tiles stitched)",
+   "title": "LRO WAC global mosaic (globe texture)",
+   "source": "https://trek.nasa.gov/tiles/Moon/EQ/LRO_WAC_Mosaic_Global_303ppd_v02/1.0.0/default/default028mm/{z}/{row}/{col}.jpg",
+   "notes": " zoom 2, 32/32 tiles",
+   "bbox": [
+    -180,
+    -90,
+    180,
+    90
+   ]
+  },
+  {
+   "retrieved": "2026-11-05",
+   "id": "textures/mars_globe.jpg",
+   "kind": "orthoimage mosaic (real, WMTS tiles stitched)",
+   "title": "Viking MDIM 2.1 colour global mosaic (globe texture)",
+   "source": "https://trek.nasa.gov/tiles/Mars/EQ/Mars_Viking_MDIM21_ClrMosaic_global_232m/1.0.0/default/default028mm/{z}/{row}/{col}.jpg",
+   "notes": " zoom 2, 32/32 tiles",
+   "bbox": [
+    -180,
+    -90,
+    180,
+    90
+   ]
+  },
+  {
+   "retrieved": "2026-11-05",
+   "id": "models/apollo_lm.glb",
+   "kind": "3D model (NASA)",
+   "title": "Apollo Lunar Module",
+   "source": "https://assets.science.nasa.gov/content/dam/science/cds/3d/resources/model/apollo-lunar-module/Apollo%20Lunar%20Module.glb",
+   "page": "https://science.nasa.gov/3d-resources/apollo-lunar-module/",
+   "notes": "Original 0.7 MB; optimized copy in public/assets/models by tools/optimize-models.mjs"
+  },
+  {
+   "retrieved": "2026-11-05",
+   "id": "models/ingenuity.glb",
+   "kind": "3D model (NASA)",
+   "title": "Ingenuity Mars Helicopter",
+   "source": "https://assets.science.nasa.gov/content/dam/science/cds/3d/resources/model/ingenuity-mars-helicopter/Ingenuity%20Mars%20Helicopter.glb",
+   "page": "https://science.nasa.gov/3d-resources/ingenuity-mars-helicopter/",
+   "notes": "Original 2.0 MB; optimized copy in public/assets/models by tools/optimize-models.mjs"
+  },
+  {
+   "retrieved": "2026-11-05",
+   "id": "models/viking_lander.glb",
+   "kind": "3D model (NASA)",
+   "title": "Viking Lander",
+   "source": "https://assets.science.nasa.gov/content/dam/science/cds/3d/resources/model/viking-lander/Viking%20Lander.glb",
+   "page": "https://science.nasa.gov/3d-resources/viking-lander/",
+   "notes": "Original 1.8 MB; optimized copy in public/assets/models by tools/optimize-models.mjs"
+  },
+  {
+   "retrieved": "2026-11-05",
+   "id": "models/perseverance.glb",
+   "kind": "3D model (NASA)",
+   "title": "Mars 2020 Perseverance Rover",
+   "source": "https://assets.science.nasa.gov/content/dam/science/cds/3d/resources/model/mars-2020-perseverance-rover/Mars%202020%20Perseverance%20Rover.glb",
+   "page": "https://science.nasa.gov/3d-resources/mars-2020-perseverance-rover/",
+   "notes": "Original 5.0 MB; optimized copy in public/assets/models by tools/optimize-models.mjs"
+  },
+  {
+   "retrieved": "2026-11-05",
+   "id": "models/saturn_v.glb",
+   "kind": "3D model (NASA)",
+   "title": "Saturn V",
+   "source": "https://assets.science.nasa.gov/content/dam/science/cds/3d/resources/model/saturn-v/Saturn%20V.glb",
+   "page": "https://science.nasa.gov/3d-resources/saturn-v/",
+   "notes": "Original 0.9 MB; optimized copy in public/assets/models by tools/optimize-models.mjs"
+  },
+  {
+   "retrieved": "2026-11-05",
+   "id": "models/astronaut.glb",
+   "kind": "3D model (NASA)",
+   "title": "Astronaut",
+   "source": "https://assets.science.nasa.gov/content/dam/science/cds/3d/resources/model/astronaut/Astronaut.glb",
+   "page": "https://science.nasa.gov/3d-resources/astronaut/",
+   "notes": "Original 0.8 MB; optimized copy in public/assets/models by tools/optimize-models.mjs"
+  },
+  {
+   "retrieved": "2026-11-05",
+   "id": "models/z2_suit.glb",
+   "kind": "3D model (NASA)",
+   "title": "Z2 Spacesuit",
+   "source": "https://assets.science.nasa.gov/content/dam/science/cds/3d/resources/model/z2-spacesuit/Z2%20Spacesuit.glb",
+   "page": "https://science.nasa.gov/3d-resources/z2-spacesuit/",
+   "notes": "Original 16.9 MB; optimized copy in public/assets/models by tools/optimize-models.mjs"
+  },
+  {
+   "retrieved": "2026-11-05",
+   "id": "data/insight_weather.json",
+   "kind": "Mars surface weather (real, archived)",
+   "source": "https://api.nasa.gov/insight_weather/",
+   "notes": "InSight TWINS/PS measurements for the final reported sols (2020). Measured at Elysium Planitia, ~600 km from Gale crater."
+  },
+  {
+   "retrieved": "2026-11-05",
+   "id": "data/pds_products.json",
+   "kind": "PDS product identifiers",
+   "source": "https://pds.nasa.gov/api/search/1/products"
+  },
+  {
+   "retrieved": "2026-11-05",
+   "id": "data/datanasa_apollo15_catalog.json",
+   "kind": "data.nasa.gov catalog record",
+   "source": "https://data.nasa.gov/dataset/apollo-15-lunar-sample-information-catalog"
+  },
+  {
+   "retrieved": "2026-11-05",
+   "id": "terrain/moon_a15_core",
+   "kind": "DEM (real elevation, metres)",
+   "title": "LRO LROC NAC DEM, Apollo 15 (1.5 m/px), resampled to ~7.8 m",
+   "source": "https://trek.nasa.gov/moon/trekarcgis/rest/services/LRO_NAC_DEM_26N004E_150cmp/ImageServer",
+   "query": "bbox=3.5098416881108894,25.991066341349576,3.730158311889111,26.188933658650424&size=769,691&format=tiff&pixelType=F32&noDataInterpretation=esriNoDataMatchAny&interpolation=RSP_BilinearInterpolation",
+   "notes": "LROC NAC stereo DTM (PDS LROC archive) served by Moon Trek.",
+   "stats": {
+    "min": -2242.2,
+    "max": -1672.5,
+    "widthM": 6000,
+    "heightM": 6003,
+    "grid": "769x691"
+   }
+  },
+  {
+   "retrieved": "2026-11-05",
+   "id": "terrain/moon_a15_far",
+   "kind": "DEM (real elevation, metres)",
+   "title": "LRO LOLA global DEM 256 ppd (~118 m/px)",
+   "source": "https://trek.nasa.gov/moon/trekarcgis/rest/services/LRO_LOLA_DEM_Global_256ppd_v06/ImageServer",
+   "query": "bbox=2.5184168811088936,25.10066341349576,4.721583118891107,27.07933658650424&size=385,346&format=tiff&pixelType=F32&noDataInterpretation=esriNoDataMatchAny&interpolation=RSP_BilinearInterpolation",
+   "notes": "LOLA gridded topography (PDS Geosciences) served by Moon Trek.",
+   "stats": {
+    "min": -2956.4,
+    "max": 2166.1,
+    "widthM": 60000,
+    "heightM": 60040,
+    "grid": "385x346"
+   }
+  },
+  {
+   "retrieved": "2026-11-05",
+   "id": "textures/moon_a15_core.jpg",
+   "kind": "orthoimage mosaic (real, WMTS tiles stitched)",
+   "title": "LRO LROC NAC Image Mosaic, Apollo 15 (50 cm/px)",
+   "source": "https://trek.nasa.gov/tiles/Moon/EQ/LRO_NAC_Mosaic_26N004E_50cmp/1.0.0/default/default028mm/{z}/{row}/{col}.png",
+   "notes": " zoom 13, 110/110 tiles",
+   "bbox": [
+    3.5098416881108894,
+    25.9910150929579,
+    3.730158311889111,
+    26.1889849070421
+   ]
+  },
+  {
+   "retrieved": "2026-11-05",
+   "id": "textures/moon_a15_far.jpg",
+   "kind": "orthoimage mosaic (real, WMTS tiles stitched)",
+   "title": "LRO LROC WAC Global Mosaic 303 ppd",
+   "source": "https://trek.nasa.gov/tiles/Moon/EQ/LRO_WAC_Mosaic_Global_303ppd_v02/1.0.0/default/default028mm/{z}/{row}/{col}.jpg",
+   "notes": " zoom 8, 16/16 tiles",
+   "bbox": [
+    2.5184168811088936,
+    25.100005820425135,
+    4.721583118891107,
+    27.079994179574864
+   ]
+  },
+  {
+   "retrieved": "2026-11-05",
+   "id": "data/apollo15_waypoints.json",
+   "kind": "Apollo 15 waypoint coordinates (real)",
+   "source": "https://trek.nasa.gov/moon/trekarcgis/rest/services/Apollo15_waypoints/MapServer/0/query?where=1%3D1&outFields=*&returnGeometry=true&f=json",
+   "notes": "Descriptions are NASA Trek bookmark text, quoted with attribution."
+  },
+  {
+   "retrieved": "2026-11-05",
+   "id": "data/apollo11_waypoints.json",
+   "kind": "Apollo 11 waypoint coordinates (real)",
+   "source": "https://trek.nasa.gov/moon/trekarcgis/rest/services/Apollo11_waypoints/MapServer/0/query?where=1%3D1&outFields=*&returnGeometry=true&f=json",
+   "notes": "Descriptions are NASA Trek bookmark text, quoted with attribution."
+  },
+  {
+   "retrieved": "2026-11-05",
+   "id": "data/apollo15_path.json",
+   "kind": "traverse polyline (real)",
+   "source": "https://trek.nasa.gov/moon/trekarcgis/rest/services/Apollo15_path/MapServer/0/query?where=1%3D1&outFields=*&returnGeometry=true&f=json"
+  },
+  {
+   "retrieved": "2026-11-05",
+   "id": "data/moon_a15_science.json",
+   "kind": "orbital remote-sensing values at the Apollo 15 site (real)",
+   "source": "Moon Trek ImageServer identify",
+   "notes": "Null values mean the layer has no coverage or did not answer; the game hides those."
+  },
+  {
+   "retrieved": "2026-11-05",
+   "id": "textures/earth_blue_marble.jpg",
+   "kind": "Earth photograph (real)",
+   "title": "The Blue Marble, AS17-148-22727, Apollo 17 crew, 7 Dec 1972",
+   "source": "https://images-assets.nasa.gov/image/as17-148-22727/as17-148-22727~orig.jpg",
+   "page": "https://images.nasa.gov/details/as17-148-22727",
+   "notes": "Retrieved via images-api.nasa.gov (NASA Image and Video Library). EPIC archive host was unreachable from this network."
+  },
+  {
+   "retrieved": "2026-11-05",
+   "id": "data/apod_fallback.json",
+   "kind": "Offline fallback for the APOD panel (real NASA photo)",
+   "title": "The Blue Marble (AS17-148-22727)",
+   "source": "https://images-api.nasa.gov/search?nasa_id=as17-148-22727",
+   "notes": "Used when api.nasa.gov APOD is offline, rate-limited, or returns an invalid record."
+  }
+ ]
+}

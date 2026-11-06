@@ -1,0 +1,159 @@
+{
+ "location": "Elysium Planitia (InSight lander, 4.5N 135.6E)",
+ "sols": [
+  {
+   "sol": 675,
+   "firstUTC": "2020-10-19T18:32:20Z",
+   "lastUTC": "2020-10-20T19:11:55Z",
+   "season": "fall",
+   "northernSeason": "early winter",
+   "airTempC": {
+    "av": -62.314,
+    "mn": -96.872,
+    "mx": -15.908
+   },
+   "pressurePa": {
+    "av": 750.563,
+    "mn": 722.0901,
+    "mx": 768.791
+   },
+   "windMs": {
+    "av": 7.233,
+    "mn": 1.051,
+    "mx": 22.455
+   }
+  },
+  {
+   "sol": 676,
+   "firstUTC": "2020-10-20T19:11:55Z",
+   "lastUTC": "2020-10-21T19:51:31Z",
+   "season": "fall",
+   "northernSeason": "early winter",
+   "airTempC": {
+    "av": -62.812,
+    "mn": -96.912,
+    "mx": -16.499
+   },
+   "pressurePa": {
+    "av": 749.09,
+    "mn": 722.473,
+    "mx": 767.1426
+   },
+   "windMs": {
+    "av": 8.526,
+    "mn": 1.11,
+    "mx": 26.905
+   }
+  },
+  {
+   "sol": 677,
+   "firstUTC": "2020-10-21T19:51:31Z",
+   "lastUTC": "2020-10-22T20:31:06Z",
+   "season": "fall",
+   "northernSeason": "mid winter",
+   "airTempC": {
+    "av": -63.056,
+    "mn": -97.249,
+    "mx": -16.853
+   },
+   "pressurePa": {
+    "av": 748.698,
+    "mn": 720.5873,
+    "mx": 767.4249
+   },
+   "windMs": {
+    "av": 7.887,
+    "mn": 0.511,
+    "mx": 23.197
+   }
+  },
+  {
+   "sol": 678,
+   "firstUTC": "2020-10-22T20:31:06Z",
+   "lastUTC": "2020-10-23T21:10:41Z",
+   "season": "fall",
+   "northernSeason": "mid winter",
+   "airTempC": {
+    "av": -62.562,
+    "mn": -97.728,
+    "mx": -9.055
+   },
+   "pressurePa": {
+    "av": 743.741,
+    "mn": 717.7254,
+    "mx": 760.2834
+   },
+   "windMs": {
+    "av": 5.246,
+    "mn": 0.244,
+    "mx": 18.399
+   }
+  },
+  {
+   "sol": 679,
+   "firstUTC": "2020-10-23T21:10:41Z",
+   "lastUTC": "2020-10-24T21:50:16Z",
+   "season": "fall",
+   "northernSeason": "mid winter",
+   "airTempC": {
+    "av": -62.551,
+    "mn": -96.644,
+    "mx": -11.561
+   },
+   "pressurePa": {
+    "av": 744.529,
+    "mn": 719.4178,
+    "mx": 763.2724
+   },
+   "windMs": {
+    "av": 5.565,
+    "mn": 0.231,
+    "mx": 19.409000000000002
+   }
+  },
+  {
+   "sol": 680,
+   "firstUTC": "2020-10-24T21:50:16Z",
+   "lastUTC": "2020-10-25T22:29:51Z",
+   "season": "fall",
+   "northernSeason": "mid winter",
+   "airTempC": {
+    "av": -61.789,
+    "mn": -96.811,
+    "mx": -15.298
+   },
+   "pressurePa": {
+    "av": 743.99,
+    "mn": 717.1398,
+    "mx": 764.0093
+   },
+   "windMs": {
+    "av": 6.517,
+    "mn": 0.275,
+    "mx": 24.235
+   }
+  },
+  {
+   "sol": 681,
+   "firstUTC": "2020-10-25T22:29:51Z",
+   "lastUTC": "2020-10-26T23:09:26Z",
+   "season": "fall",
+   "northernSeason": "mid winter",
+   "airTempC": {
+    "av": -62.434,
+    "mn": -95.447,
+    "mx": -4.444
+   },
+   "pressurePa": {
+    "av": 743.55,
+    "mn": 718.463,
+    "mx": 760.2244
+   },
+   "windMs": {
+    "av": 5.632,
+    "mn": 0.228,
+    "mx": 18.577
+   }
+  }
+ ]
+}

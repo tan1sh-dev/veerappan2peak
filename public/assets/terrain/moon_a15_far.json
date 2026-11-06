@@ -1,0 +1,16 @@
+{
+ "width": 385,
+ "height": 346,
+ "lonMin": 2.5184168811088936,
+ "lonMax": 4.721583118891107,
+ "latMin": 25.100005820425135,
+ "latMax": 27.079994179574864,
+ "widthM": 60000.000000000015,
+ "heightM": 60039.880850233974,
+ "min": -2956.415283203125,
+ "max": 2166.110595703125,
+ "bodyRadius": 1737400,
+ "source": "https://trek.nasa.gov/moon/trekarcgis/rest/services/LRO_LOLA_DEM_Global_256ppd_v06/ImageServer/exportImage",
+ "service": "LRO_LOLA_DEM_Global_256ppd_v06",
+ "title": "LRO LOLA global DEM 256 ppd (~118 m/px)"
+}

@@ -1,0 +1,45 @@
+{
+ "location": {
+  "lon": 3.634,
+  "lat": 26.13224,
+  "name": "Apollo 15 LM site"
+ },
+ "values": {
+  "feo": {
+   "label": "FeO abundance (Kaguya Multiband Imager)",
+   "unit": "wt%",
+   "value": 14.4045,
+   "source": "https://trek.nasa.gov/moon/trekarcgis/rest/services/Lunar_Kaguya_MIMap_MineralDeconv_FeOWeightPercent_50N50S/ImageServer/identify?geometry=%7B%22x%22%3A3.634%2C%22y%22%3A26.13224%7D&geometryType=esriGeometryPoint&returnGeometry=false&returnCatalogItems=false&f=json"
+  },
+  "plagioclase": {
+   "label": "Plagioclase (Kaguya MI)",
+   "unit": "vol%",
+   "value": 0.500755,
+   "source": "https://trek.nasa.gov/moon/trekarcgis/rest/services/Lunar_Kaguya_MIMap_MineralDeconv_PlagioclasePercent_50N50S/ImageServer/identify?geometry=%7B%22x%22%3A3.634%2C%22y%22%3A26.13224%7D&geometryType=esriGeometryPoint&returnGeometry=false&returnCatalogItems=false&f=json"
+  },
+  "clinopyroxene": {
+   "label": "Clinopyroxene (Kaguya MI)",
+   "unit": "vol%",
+   "value": 0.210501,
+   "source": "https://trek.nasa.gov/moon/trekarcgis/rest/services/Lunar_Kaguya_MIMap_MineralDeconv_ClinopyroxenePercent_50N50S/ImageServer/identify?geometry=%7B%22x%22%3A3.634%2C%22y%22%3A26.13224%7D&geometryType=esriGeometryPoint&returnGeometry=false&returnCatalogItems=false&f=json"
+  },
+  "olivine": {
+   "label": "Olivine (Kaguya MI)",
+   "unit": "vol%",
+   "value": 0.10565,
+   "source": "https://trek.nasa.gov/moon/trekarcgis/rest/services/Lunar_Kaguya_MIMap_MineralDeconv_OlivinePercent_50N50S/ImageServer/identify?geometry=%7B%22x%22%3A3.634%2C%22y%22%3A26.13224%7D&geometryType=esriGeometryPoint&returnGeometry=false&returnCatalogItems=false&f=json"
+  },
+  "omat": {
+   "label": "Optical maturity index (Kaguya MI)",
+   "unit": "",
+   "value": 0.164583,
+   "source": "https://trek.nasa.gov/moon/trekarcgis/rest/services/Lunar_Kaguya_MIMap_MineralDeconv_OpticalMaturityIndex_50N50S/ImageServer/identify?geometry=%7B%22x%22%3A3.634%2C%22y%22%3A26.13224%7D&geometryType=esriGeometryPoint&returnGeometry=false&returnCatalogItems=false&f=json"
+  },
+  "thorium": {
+   "label": "Thorium (Lunar Prospector GRS, 2 ppd)",
+   "unit": "ppm",
+   "value": 5.4947,
+   "source": "https://trek.nasa.gov/moon/trekarcgis/rest/services/LP_GRS_Th_Global_2ppd/ImageServer/identify?geometry=%7B%22x%22%3A3.634%2C%22y%22%3A26.13224%7D&geometryType=esriGeometryPoint&returnGeometry=false&returnCatalogItems=false&f=json"
+  }
+ }
+}

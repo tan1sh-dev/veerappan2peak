@@ -1,0 +1,121 @@
+[
+ {
+  "name": "Lunar Module Descent Stage",
+  "lon": 3.634,
+  "lat": 26.13224,
+  "description": "Apollo 15 LM and Rover The Apollo Lunar Module (LM) was a lunar lander that carried astronauts to the surface of the Moon and returned them back to lunar orbit. The lunar module consisted of an ascent stage attached on top of a descent stage. The engine of the descent stage carried the crew of two astronauts down to the lunar surface. When the astronauts were ready Lunar Module Descent Stage (Apollo 17) to leave the Moon, the descent stage served as a launchpad for the ascent stage’s launch carrying the astronauts back to lunar orbit and return to the Apollo Command Module. The descent stage remained on the lunar surface, where it can still be seen from lunar orbit.",
+  "descriptionSource": "https://trek.nasa.gov/assets/bookmarks/moon/apollo-15/lmds/lmds.html"
+ },
+ {
+  "name": "ALSEP",
+  "lon": 3.63052,
+  "lat": 26.13398,
+  "description": "The astronauts’ first major task of their first traverse was to deploy the Apollo Surface Experiment Package (ALSEP). This consisted of several scientific instruments arranged around a central station that provided communications and power. The experiments included in the Apollo 15 ALSEP included the Heat Flow Experiment, the Lunar Surface Magnetometer, the Passive Seismic Experiment, the Cold Cathode Gage, the Solar Wind Spectrometer, the Suprathermal Ion Detector Experiment, the Lunar Dust Detector, and the Laser Ranging Retroreflector. Apollo 15 ALSEP",
+  "descriptionSource": "https://trek.nasa.gov/assets/bookmarks/moon/apollo-15/alsep/alsep.html"
+ },
+ {
+  "name": "LRV",
+  "lon": 3.63877,
+  "lat": 26.13162,
+  "description": "Lunar Roving Vehicle (LRV) is a battery-powered, two-seater, four-wheeled rover which allowed the astronauts to drive across the lunar surface, covering far greater areas, and carrying back more sample material than in previous missions. LRV’s were included in the “J-class” Apollo missions, which were the final 3 Apollo lunar missions (Apollo 15-17). Apollo 15 Lunar Rover",
+  "descriptionSource": "https://trek.nasa.gov/assets/bookmarks/moon/apollo-15/lrv/lrv.html"
+ },
+ {
+  "name": "Elbow Crater",
+  "lon": 3.60183,
+  "lat": 26.02903,
+  "description": null,
+  "descriptionSource": null
+ },
+ {
+  "name": "Spur Crater",
+  "lon": 3.66745,
+  "lat": 25.98173,
+  "description": null,
+  "descriptionSource": null
+ },
+ {
+  "name": "Dune Crater",
+  "lon": 3.66362,
+  "lat": 26.03664,
+  "description": null,
+  "descriptionSource": null
+ },
+ {
+  "name": "1",
+  "lon": 3.60735,
+  "lat": 26.02975,
+  "description": "Astronauts Scott and Irwin started their first traverse driving south along the eastern edge of Hadley Rille toward the slopes of mount Hadlay Delta. Near the point where the rille meets the slope of the mountain, the rille makes a pronounced turn to the west. Next to this this elbow-shaped turn in the rille is a 400-meter diameter crater given the unofficial name Elbow Crater. Station 1 was located on the east flank of Elbow Crater. Here the astronauts performed radial sampling (collecting samples at varying distances from the crater, corresponding to material ejected from different depths below the surface when the crater formed), gathered documented samples, and performed panoramic photog",
+  "descriptionSource": "https://trek.nasa.gov/assets/bookmarks/moon/apollo-15/1/1.html"
+ },
+ {
+  "name": "2",
+  "lon": 3.58783,
+  "lat": 26.01248,
+  "description": "Station 2 was located upslope from Station 1 on the northwestern flank of St. George Crater near the base of the Apennine Front. The astronauts gathered samples, obtained a double-length core tube sample, and performed stereopanoramic and 500-millimeter photography. Looking down on Hadley Rille from Station 2",
+  "descriptionSource": "https://trek.nasa.gov/assets/bookmarks/moon/apollo-15/2/2.html"
+ },
+ {
+  "name": "3",
+  "lon": 3.62009,
+  "lat": 26.0707,
+  "description": "The stop at the originally planned location for Station 3 was cancelled by mission control during the 1st traverse due to concerns about the traverse running behind schedule. The astronauts were therefore instructed to proceed directly back to Falcon. But on the way back, Scott spotted a fascinating-looking rock sitting all alone exposed on the lunar surface. He realized that mission control would not give him approval to stop and retrieve it, so he radioed that he was stopping the rover so that he could make an adjustment to his seatbelt. He then jumped out, grabbed the rock, returned to the rover and proceeded on. The vesiculated basaltic rock he collected became known as “Seatbelt Rock”, ",
+  "descriptionSource": "https://trek.nasa.gov/assets/bookmarks/moon/apollo-15/3/3.html"
+ },
+ {
+  "name": "4",
+  "lon": 3.66447,
+  "lat": 26.02892,
+  "description": "Heading back toward the Lunar Module, the astronauts return path took them past the location for Station 4, which they had bypassed on their way out. Now, with sufficient time remaining in their schedule, the astronauts made the stop on their way back. This station was on the south rim of Dune Crater. The crew collected samples and performed panoramic photography. View at Station 4",
+  "descriptionSource": "https://trek.nasa.gov/assets/bookmarks/moon/apollo-15/4/4.html"
+ },
+ {
+  "name": "6",
+  "lon": 3.68136,
+  "lat": 25.97536,
+  "description": "The second traverse of Apollo 15 had the astronauts again proceeding south toward Mt Hadley Delta, this time on a path to the east of their previous track. Their goal was to climb higher on this traverse in search of lighter-colored, and presumably much older highland rock samples. Time spent in the higher slopes seeming of particular importance, and the astronauts’ wanting to stay on top of their schedule prompted them to drive past their planned stop on the low location of Station 4. Surveying the terrain at the base of the Apennine Front during the traverse, Scott made the command decision to delete the planned stop at Station 5. Their first stop on the second traverse thus became Station",
+  "descriptionSource": "https://trek.nasa.gov/assets/bookmarks/moon/apollo-15/6/6.html"
+ },
+ {
+  "name": "6A",
+  "lon": 3.67191,
+  "lat": 25.97619,
+  "description": "Station 6A was the highest location explored on the Apennine Front. It was an intermediate stop made enroute to Station 7. The boulder that marked this stop was located about 250 meters south-southeast of Spur Crater. The astronauts collected six samples and performed panoramic photography. Panorama at 6A",
+  "descriptionSource": "https://trek.nasa.gov/assets/bookmarks/moon/apollo-15/6a/6a.html"
+ },
+ {
+  "name": "7",
+  "lon": 3.66841,
+  "lat": 25.98336,
+  "description": "Station 7 at Spur Crater The astronauts continued northwest across the lower slope of Mt Hadley Delta to the rim of Spur crater, 80 meters in diameter. Her they gathered a number of samples, But the real price was a rock that included just what they were looking for, a clast of bright white ancient highland anorthosite. This sample became known as the \"Genesis Rock.\" Genesis Rock Genesis Rock Closeup",
+  "descriptionSource": "https://trek.nasa.gov/assets/bookmarks/moon/apollo-15/7/7.html"
+ },
+ {
+  "name": "8",
+  "lon": 3.63151,
+  "lat": 26.13357,
+  "description": "This area next to the ALSEP was dubbed Station 8. It was located approximately 125 meters northwest of the Lunar Module. Sampling in this area included comprehensive geologic samples and a special environmental sample gathered from a trench Irwin digging a trench at Station 8",
+  "descriptionSource": "https://trek.nasa.gov/assets/bookmarks/moon/apollo-15/8/8.html"
+ },
+ {
+  "name": "9",
+  "lon": 3.57515,
+  "lat": 26.12889,
+  "description": "For their third and final traverse, the astronauts headed west to explore the eastern rim of Hadley Rille. Station 9 was situated approximately 1.4 kilometers west of the LM and 300 meters east of Hadley Rille. The astronauts collected samples and performed panoramic photography tasks. At Station 9",
+  "descriptionSource": "https://trek.nasa.gov/assets/bookmarks/moon/apollo-15/9/9.html"
+ },
+ {
+  "name": "9A",
+  "lon": 3.5654,
+  "lat": 26.12872,
+  "description": "One hundred and three samples were collected from an area of about 30 by 75 meters at this site, which was located at the edge of Hadley Rille, about 1.8 kilometers west of the LM. A double-length core tube sample was part of this extensive sampling. Photographic tasks at this site included 500-mm and stereoscopic panoramic photography. View from Station 9A",
+  "descriptionSource": "https://trek.nasa.gov/assets/bookmarks/moon/apollo-15/9a/9a.html"
+ },
+ {
+  "name": "10",
+  "lon": 3.56453,
+  "lat": 26.13094,
+  "description": "Although samples were collected, this station was primarily a stop for photography. This site was about 200 meters north-northwest of Station 9A. This offset distance provided a base for obtaining stereoscopic 500-mm and panoramic photography. Looking south from Station 10",
+  "descriptionSource": "https://trek.nasa.gov/assets/bookmarks/moon/apollo-15/10/10.html"
+ }
+]

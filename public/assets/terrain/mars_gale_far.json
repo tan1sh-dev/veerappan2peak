@@ -1,0 +1,16 @@
+{
+ "width": 385,
+ "height": 384,
+ "lonMin": 136.67686621441152,
+ "lonMax": 138.20313378558848,
+ "latMin": -5.361151619911626,
+ "latMax": -3.8388483800883733,
+ "widthM": 89999.99999999917,
+ "heightM": 90056.31610619361,
+ "min": -4667.12353515625,
+ "max": 721.9985961914062,
+ "bodyRadius": 3389500,
+ "source": "https://trek.nasa.gov/mars/trekarcgis/rest/services/Mars_MOLA_blend200ppx_HRSC_DEM_clon0dd_200mpp_lzw/ImageServer/exportImage",
+ "service": "Mars_MOLA_blend200ppx_HRSC_DEM_clon0dd_200mpp_lzw",
+ "title": "MGS MOLA + Mars Express HRSC blended DEM (200 m/px)"
+}

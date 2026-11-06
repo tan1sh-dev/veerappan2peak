@@ -1,0 +1,36 @@
+[
+ {
+  "lid": "urn:nasa:pds:context:instrument:lro.lola",
+  "title": "Lunar Reconnaissance Orbiter Lunar Orbiter Laser Altimeter",
+  "description": "The Lunar Reconnaissance Orbiter (LRO) Lunar Orbiter Laser Altimeter (LOLA) is a pulse detection, time-of-flight laser altimeter. LOLA transmits a 5-spot pattern that measures the precise distance to the lunar surface at multiple points simultaneously, thus providing 5 profiles across the lunar surface. It has five beams and five receiver channels, the first of which is also fiber-optic-coupled to a Laser Ranging (LR) telescope mounted on the High-Gain Antenna. The five received laser pulses are time stamped with respect to the spacecraft mission elapsed time using a set of time-to-digital con"
+ },
+ {
+  "lid": "urn:nasa:pds:context:instrument:lro.lroc",
+  "title": "Lunar Reconnaissance Orbiter Camera",
+  "description": "The Lunar Reconnaissance Orbiter Camera (LROC) consists of two narrow-angle camera components (NACs), a wide-angle camera component (WAC), and a common Sequence and Compressor System (SCS). Each NAC has a 700 mm focal length Cassegrain (Ritchey-Chretien) telescope that images onto a 5064-pixel CCD line-array providing a cross-track field- of-view (FOV) of 2.86 degrees. The WAC has two lenses imaging onto the same 1024 x 1024 pixel, electronically shuttered CCD area-array, one imaging in the visible/near infrared (VIS), and the other in the Ultraviolet (UV). In monochrome mode, 1024 x 14 pixels"
+ },
+ {
+  "lid": "urn:nasa:pds:context:investigation:mission.lunar_reconnaissance_orbiter",
+  "title": "Lunar Reconnaissance Orbiter",
+  "description": "The Lunar Reconnaissance Orbiter (LRO), launched on June 18, 2009, continues to orbit and investigate the Moon. The mission objectives include producing a high-resolution global topographic model, mapping the distribution of hydrogen, and identifying lunar landing sites and associated hazards."
+ },
+ {
+  "lid": "urn:nasa:pds:context:investigation:mission.mars_science_laboratory",
+  "title": "Mars Science Laboratory: Curiosity Rover",
+  "description": "The Mars Science Laboratory (MSL) project, initiated in 2003, marked a significant advancement in Mars exploration with the successful deployment of the Curiosity rover. Launched on November 26, 2011, and landing in Gale Crater on August 6, 2012, the MSL mission has broadened our understanding of Martian environments and their potential habitability. Throughout its journey to Mars, and during its primary mission which concluded on September 28, 2014, Curiosity undertook comprehensive scientific investigations. These included routine instrument health checks and data collection by the Radiation"
+ },
+ {
+  "lid": "urn:nasa:pds:context:instrument:mro.hirise",
+  "error": "HTTP 404 for https://pds.nasa.gov/api/search/1/products/urn:nasa:pds:context:instrument:mro.hirise"
+ },
+ {
+  "lid": "urn:nasa:pds:context:investigation:mission.mars_reconnaissance_orbiter",
+  "title": "Mars Reconnaissance Orbiter",
+  "description": "The Mars Reconnaissance Orbiter, or MRO, has studied the Red Planet's atmosphere and terrain from orbit since 2006 and also serves as a key data relay station for other Mars missions, including the Mars Exploration Rover Opportunity. Equipped with a powerful camera called HiRISE that has aided in a number of discoveries, the Mars Reconnaissance Orbiter has sent back thousands of stunning images of the Martian surface that are helping scientists learn more about Mars, including the history of water flows on or near the planet's surface."
+ },
+ {
+  "lid": "urn:nasa:pds:context:investigation:mission.apollo_15",
+  "title": "Apollo 15",
+  "description": "The Apollo 15 was the fourth mission that allowed humans to walk on the Moon. It consisted of the Command and Service Module (CSM) and the Lunar Module (LM). The CSM took images of the surface and communicated with Earth. The LM carried the Astronauts and Apollo Lunar Surface Experiments Package (ALSEP) to the surface."
+ }
+]
