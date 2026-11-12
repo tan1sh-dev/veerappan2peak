@@ -16,12 +16,11 @@ import { getDialogue } from '../gameplay/dialogues.js';
 import { missionById } from '../gameplay/missions.js';
 import { tag } from '../ui/UI.js';
 import { mergeStatic } from '../world/merge.js';
+import { makeLaunchSurroundings, makeLunarFieldStation } from '../world/MissionScenery.js';
+import { launchGround, makeLaunchPlatform, LAUNCH_BOARD } from '../world/LaunchPlatform.js';
 
 const MODULE_SLOTS = { habitat: [0, 0], solar: [17, 6], comms: [-15, 10], lab: [2, 27], isru: [19, 25], roverbay: [-19, 27], greenhouse: [-2, 44] };
 const MOON_PREBUILT = ['habitat', 'solar'];
-
-// Flat "ground" for the Earth launch site
-const FLAT = { height: () => 0, slope: () => 0, normal: () => [0, 1, 0] };
 
 function placeAt(o, x, y, z) { o.position.set(x, y, z); return o; }
 
@@ -99,7 +98,7 @@ export class SurfaceLevel {
 
   // =====================================================================================
   async buildEarth(progress) {
-    this.ground = FLAT;
+    this.ground = launchGround;
     this.colliders = [];
     const s = this.scene;
     s.add(makeGradientSky('#3d77c4', '#bcd5ea', 60000));
@@ -119,7 +118,7 @@ export class SurfaceLevel {
     const ocean = new THREE.Mesh(new THREE.PlaneGeometry(40000, 40000), new THREE.MeshStandardMaterial({ color: 0x2a5d8a, roughness: 0.3, metalness: 0.2 }));
     ocean.rotation.x = -Math.PI / 2; ocean.position.set(22000, 0.05, 0); s.add(ocean);
     // pad + crawlerway
-    const pad = new THREE.Mesh(new THREE.CylinderGeometry(70, 80, 3, 8), new THREE.MeshStandardMaterial({ color: 0x9a9890, roughness: 0.9 })); pad.position.y = 1.5; pad.receiveShadow = true; s.add(pad);
+    s.add(makeLaunchPlatform(this.colliders));
     const way = new THREE.Mesh(new THREE.PlaneGeometry(40, 3000), new THREE.MeshStandardMaterial({ color: 0x8a8578, roughness: 1 })); way.rotation.x = -Math.PI / 2; way.position.set(0, 0.04, 1600); way.receiveShadow = true; s.add(way);
     progress(0.3);
     const tower = mergeStatic(P.makeLaunchTower(118)); tower.position.set(0, 3, 0); s.add(tower);
@@ -129,19 +128,16 @@ export class SurfaceLevel {
       rocket.position.set(0, 11, 0); s.add(rocket); this.rocketModel = rocket;
     } catch (e) { console.warn(e); }
     progress(0.6);
-    this.boardPoint = new THREE.Vector3(16, 0, 9);
-    const elev = P.makeMarkerRing(3, 0x4fd1ff); elev.position.set(16, 0.1, 9); s.add(elev);
+    this.boardPoint = new THREE.Vector3(LAUNCH_BOARD.x, LAUNCH_BOARD.y, LAUNCH_BOARD.z);
+    const elev = P.makeMarkerRing(1.5, 0x4fd1ff); elev.position.copy(this.boardPoint).y += 0.025; s.add(elev);
     // crew van
-    const van = new THREE.Group(); van.add(placeAt(new THREE.Mesh(new THREE.BoxGeometry(2.4, 2.6, 6), P.propMaterial('white')), 0, 1.6, 0));
-    van.add(placeAt(new THREE.Mesh(new THREE.BoxGeometry(2.42, 0.3, 6.02), P.propMaterial('blue')), 0, 1.6, 0));
-    van.position.set(34, 0, 140); van.rotation.y = 0.3; van.traverse(o => { if (o.isMesh) o.castShadow = true; }); s.add(van);
-    this.colliders.push({ x: 34, z: 140, r: 3 }, { x: 0, z: 0, r: 16 }, { x: 16, z: 0, r: 5 });
+    s.add(makeLaunchSurroundings(this.colliders));
+    this.colliders.push({ x: 34, z: 140, r: 3 }, { x: 0, z: 0, r: 7 }, { x: 16, z: 0, r: 5 });
     // NPC: Commander Rao
     this.addNPC('rao', 30, 136, -2.4);
     this.interactables.push({ id: 'board', kind: 'board', pos: this.boardPoint, radius: 5, label: 'Take the elevator to the crew access arm',
       action: () => this.tryBoard() });
     this.interactables.push({ id: 'director', kind: 'radio', pos: new THREE.Vector3(34, 0, 140), radius: 4, label: 'Radio Launch Control', action: () => this.talk('director') });
-    s.add(makeStarfield(800, 50000));
     this.stars = null;
   }
 
@@ -283,6 +279,7 @@ export class SurfaceLevel {
     // NPCs at base
     const run = this.game.run, mid = run ? run.def.id : null;
     if (this.site === 'moon') {
+      s.add(makeLunarFieldStation(this.ground, b, this.colliders));
       this.addNPC('okafor', b.x + 5, b.z - 7, Math.PI);
       this.addNPC('lindqvist', b.x - 6, b.z - 8, Math.PI + 0.6);
       if (mid === 'm1' || !mid) this.addNPC('rao', b.x + 10, b.z - 4, -2.4);
@@ -569,7 +566,7 @@ export class SurfaceLevel {
     this.mode = m;
     this.player.model.visible = m === 'foot';
     this.rig.vehicle = m === 'rover' ? { distance: 9, height: 2.4 } : m === 'lander' ? { distance: 22, height: 3 } : null;
-    if (m === 'rover') { this.rig.targetDistance = 9; this.rig.yaw = this.rover.yaw; }
+    if (m === 'rover') { this.rig.targetDistance = 9; this.rig.yaw = this.rover.yaw; if (!this.rig.locksPointer) this.game.input.unlock(); }
     if (m === 'foot') { this.rig.targetDistance = 6; this.audio.setLoop('rover', 0); this.audio.setLoop('engine', 0); }
     this.rig.first = true;
   }
@@ -759,9 +756,9 @@ export class SurfaceLevel {
   onKey(code) {
     if (this.mode === 'lander') return;
     if (code === 'KeyV' && this.mode === 'foot') { const m = this.rig.toggleView(); this.ui.toast(m === 'first' ? 'First-person view' : 'Third-person view', 'info', 1200); }
-    if ((code === 'ControlLeft' || code === 'ControlRight') && this.mode === 'foot') {
-      if (this.rig.mode === 'first') { this.ui.toast('Shift lock works in third-person view (press V)', 'info', 1500); }
-      else { const on = this.rig.toggleShiftLock(); this.ui.toast(on ? 'Shift lock ON: mouse aims, character faces the camera' : 'Shift lock OFF: right-drag to orbit', 'info', 1800); if (on) this.game.input.lock(); else this.game.input.unlock(); }
+    if ((code === 'ShiftTap' || code === 'ControlLeft' || code === 'ControlRight') && this.mode === 'foot') {
+      if (this.rig.mode === 'first') { if (code !== 'ShiftTap') this.ui.toast('Shift lock works in third-person view (press V)', 'info', 1500); }
+      else { const on = this.rig.toggleShiftLock(); this.ui.toast(on ? 'Shift lock ON: move the mouse to turn the camera and your astronaut' : 'Shift lock OFF: right-drag to orbit', 'info', 1800); if (on) this.game.input.lock(); else this.game.input.unlock(); }
     }
     if (code === 'KeyF') { this.flashlight = !this.flashlight; this.audio.switchFlip(); }
     if (code === 'KeyE') {

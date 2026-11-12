@@ -41,17 +41,24 @@ export class Player {
     if (jump && this.onGround) { this.vel.y = this.jumpV; this.onGround = false; }
     this.vel.y -= this.g * dt;
 
+    const previousX = this.pos.x, previousZ = this.pos.z;
     const nx = this.pos.x + this.vel.x * dt, nz = this.pos.z + this.vel.z * dt;
     // slope limit: block moving uphill onto very steep ground
     const hNow = this.ground.height(this.pos.x, this.pos.z), hNext = this.ground.height(nx, nz);
     const step = Math.hypot(nx - this.pos.x, nz - this.pos.z);
-    if (this.onGround && step > 1e-4 && (hNext - hNow) / step > Math.tan(38 * Math.PI / 180)) {
+    const blockedSurface = this.ground.canMove && !this.ground.canMove(this.pos.x, this.pos.z, nx, nz, this.pos.y);
+    if (blockedSurface || (this.onGround && step > 1e-4 && (hNext - hNow) / step > Math.tan(38 * Math.PI / 180))) {
       this.vel.x *= -0.2; this.vel.z *= -0.2;
     } else { this.distance += step; this.pos.x = nx; this.pos.z = nz; }
     // structure colliders
     for (const c of this.colliders) {
       const dx = this.pos.x - c.x, dz = this.pos.z - c.z, d = Math.hypot(dx, dz), r = c.r + 0.35;
       if (d < r && d > 1e-4 && (c.h === undefined || this.pos.y < c.y + c.h)) { this.pos.x = c.x + dx / d * r; this.pos.z = c.z + dz / d * r; }
+    }
+    // A nearby prop must not push the player through a raised surface's side wall.
+    if (this.ground.canMove && !this.ground.canMove(previousX, previousZ, this.pos.x, this.pos.z, this.pos.y)) {
+      this.pos.x = previousX; this.pos.z = previousZ;
+      this.vel.x = 0; this.vel.z = 0;
     }
     this.pos.y += this.vel.y * dt;
     const gh = this.ground.height(this.pos.x, this.pos.z);

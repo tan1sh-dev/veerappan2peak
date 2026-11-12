@@ -399,8 +399,8 @@ export class UI {
 
   controls(onBack) {
     const rows = [
-      ['W A S D', 'Move'], ['Mouse', 'Look (right-drag in free third-person camera)'], ['Shift', 'Sprint'], ['Space', 'Jump / brake (rover) / fire engine (lander)'],
-      ['Left Ctrl', 'Toggle SHIFT LOCK (third person: camera-locked aiming, character faces where you look)'], ['V', 'Switch first / third person'], ['Mouse wheel', 'Zoom camera / lander throttle'],
+      ['W A S D', 'Move'], ['Mouse', 'Look (right-drag in free third-person camera)'], ['Shift (hold)', 'Sprint'], ['Space', 'Jump / brake (rover) / fire engine (lander)'],
+      ['Shift (tap) · Left Ctrl', 'Toggle SHIFT LOCK (on by default: moving the mouse turns the camera and your character together)'], ['V', 'Switch first / third person'], ['Mouse wheel', 'Zoom camera / lander throttle'],
       ['E', 'Interact · talk · collect · enter/exit vehicle'], ['Q (hold)', 'Scanner'], ['F', 'Flashlight'], ['R', 'Radio Mission Control'], ['B', 'Build menu (at a build pad)'],
       ['Tab', 'Inventory'], ['M', 'Planetary map'], ['J', 'Mission log'], ['Esc', 'Pause'], ['F11', 'Fullscreen'],
       ['Rocket', 'A/D pitch · Shift/Ctrl throttle · Space stage/burn · G autopilot · , . time warp'], ['Lander', 'Space fire · wheel or Shift/Ctrl throttle · WASD translate (RCS)'], ['Cruise', 'Mouse/WASD to point · Space burn · , . time warp'],
@@ -427,6 +427,7 @@ export class UI {
       row('Mouse sensitivity', rng('mouseSensitivity', 0.2, 3, 0.05)),
       row('Invert mouse Y', chk('invertY')),
       row('Default camera', sel('cameraMode', [['third', 'Third person'], ['first', 'First person']])),
+      row('Shift lock (mouse turns character)', chk('shiftLock')),
       row('Master volume', rng('masterVolume', 0, 1, 0.05)),
       row('Effects volume', rng('sfxVolume', 0, 1, 0.05)),
       row('Ambience volume', rng('ambienceVolume', 0, 1, 0.05)),

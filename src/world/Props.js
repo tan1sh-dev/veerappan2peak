@@ -1,4 +1,6 @@
 import * as THREE from 'three';
+import { RoundedBoxGeometry } from 'three/examples/jsm/geometries/RoundedBoxGeometry.js';
+import { mergeStatic } from './merge.js';
 
 // Low-poly procedural models. Anything built here is a GAME MODEL (not a NASA 3D asset) and is labelled so in-game.
 const M = {};
@@ -13,7 +15,7 @@ function mat(name) {
     alu: { color: 0xb9bcc2, roughness: 0.35, metalness: 0.8 },
     gold: { color: 0xc89b3c, roughness: 0.3, metalness: 0.9 },
     foil: { color: 0xd8a640, roughness: 0.25, metalness: 1.0 },
-    visor: { color: 0xc0901f, roughness: 0.05, metalness: 1.0 },
+    visor: { color: 0xb68329, roughness: 0.16, metalness: 0.65 },
     solar: { color: 0x1d2e5c, roughness: 0.25, metalness: 0.6, emissive: 0x050a1a },
     orange: { color: 0xd8612a, roughness: 0.7 },
     red: { color: 0xb3261e, roughness: 0.6 },
@@ -41,14 +43,33 @@ function group(...kids) { const g = new THREE.Group(); kids.forEach(k => g.add(k
 export function makeAstronaut({ accent = 'red', scale = 1 } = {}) {
   const root = new THREE.Group();
   const body = new THREE.Group(); root.add(body);
-  const torso = box(0.5, 0.62, 0.32, 'suit', 0, 1.2, 0); body.add(torso);
-  body.add(box(0.46, 0.66, 0.26, 'white', 0, 1.24, 0.27)); // PLSS backpack
+  const rounded = (w, h, d, material, x, y, z, radius = 0.04) => {
+    const m = new THREE.Mesh(new RoundedBoxGeometry(w, h, d, 3, radius), mat(material));
+    m.position.set(x, y, z); m.castShadow = m.receiveShadow = true; return m;
+  };
+  const torso = rounded(0.5, 0.62, 0.35, 'suit', 0, 1.2, 0, 0.09); body.add(torso);
+  body.add(rounded(0.44, 0.6, 0.25, 'white', 0, 1.24, 0.27)); // PLSS backpack
   body.add(box(0.3, 0.18, 0.06, 'grey', 0, 1.25, -0.18));  // chest control unit
   body.add(box(0.52, 0.06, 0.34, accent, 0, 1.0, 0));      // waist ring stripe
   const head = new THREE.Group(); head.position.set(0, 1.62, 0); body.add(head);
-  head.add(sph(0.2, 'suit', 0, 0, 0, 16, 12));
-  const visor = sph(0.165, 'visor', 0, -0.01, -0.07, 16, 12); visor.scale.set(1, 0.85, 0.8); head.add(visor);
-  const limb = (w, h, m) => { const g = new THREE.Group(); const s = box(w, h, w, m, 0, -h / 2, 0); g.add(s); return g; };
+  head.add(sph(0.215, 'suit', 0, 0, 0, 32, 20));
+  const rim = sph(0.189, 'dark', 0, -0.01, -0.075, 32, 20); rim.scale.set(1, 0.87, 0.8); head.add(rim);
+  const visor = sph(0.174, 'visor', 0, -0.01, -0.097, 32, 20); visor.scale.set(1, 0.85, 0.8); head.add(visor);
+  head.add(rounded(0.27, 0.025, 0.055, 'white', 0, 0.135, -0.16, 0.01));
+  body.add(cyl(0.156, 0.17, 0.055, 'alu', 0, 1.47, 0, 24));
+  for (const x of [-0.205, 0.205]) {
+    head.add(rounded(0.05, 0.09, 0.095, 'grey', x, 0.01, 0));
+    head.add(box(0.035, 0.025, 0.025, 'lightOn', x, 0.05, -0.055));
+    body.add(rounded(0.035, 0.43, 0.03, 'grey', x * 0.82, 1.23, -0.176, 0.01));
+  }
+  const limb = (w, h, m) => {
+    const g = new THREE.Group();
+    g.add(rounded(w, h * 0.49, w * 1.08, m, 0, -h * 0.245, 0, w * 0.35));
+    g.add(rounded(w * 0.88, h * 0.47, w, m, 0, -h * 0.765, 0, w * 0.3));
+    for (let i = -1; i <= 1; i++) g.add(cyl(w * 0.49, w * 0.49, 0.018, 'grey', 0, -h * 0.5 + i * 0.022, 0, 16));
+    g.add(cyl(w * 0.52, w * 0.52, 0.045, accent, 0, -h * 0.22, 0, 20));
+    return g;
+  };
   const armL = limb(0.15, 0.62, 'suit'); armL.position.set(-0.33, 1.47, 0); body.add(armL);
   const armR = limb(0.15, 0.62, 'suit'); armR.position.set(0.33, 1.47, 0); body.add(armR);
   armL.add(box(0.16, 0.12, 0.16, 'grey', 0, -0.66, 0)); armR.add(box(0.16, 0.12, 0.16, 'grey', 0, -0.66, 0));
@@ -56,6 +77,28 @@ export function makeAstronaut({ accent = 'red', scale = 1 } = {}) {
   const legR = limb(0.19, 0.86, 'suit'); legR.position.set(0.13, 0.9, 0); body.add(legR);
   legL.add(box(0.22, 0.12, 0.32, 'grey', 0, -0.86, -0.04)); legR.add(box(0.22, 0.12, 0.32, 'grey', 0, -0.86, -0.04));
   armR.add(box(0.06, 0.06, 0.1, accent, 0, -0.3, -0.08));
+  for (const arm of [armL, armR]) {
+    arm.add(rounded(0.14, 0.15, 0.16, 'suit', 0, -0.68, -0.015));
+    arm.add(sph(0.042, 'grey', 0.075, -0.67, -0.03));
+    arm.add(box(0.085, 0.09, 0.025, 'blue', 0, -0.18, -0.085));
+  }
+  for (const leg of [legL, legR]) {
+    leg.add(rounded(0.14, 0.13, 0.05, 'white', 0, -0.43, -0.095));
+    leg.add(rounded(0.22, 0.17, 0.31, 'suit', 0, -0.8, -0.045));
+    for (let i = 0; i < 4; i++) leg.add(box(0.225, 0.025, 0.025, 'dark', 0, -0.9, -0.16 + i * 0.07));
+  }
+  body.add(box(0.18, 0.065, 0.012, 'blue', -0.045, 1.28, -0.216));
+  for (let i = 0; i < 3; i++) body.add(box(0.025, 0.025, 0.015, i === 0 ? 'lightOn' : 'orange', -0.09 + i * 0.065, 1.215, -0.22));
+  for (const x of [-0.15, 0.15]) {
+    body.add(cyl(0.045, 0.045, 0.028, 'alu', x, 1.07, -0.19, 16).rotateX(Math.PI / 2));
+    const curve = new THREE.CatmullRomCurve3([new THREE.Vector3(x, 1.07, -0.21), new THREE.Vector3(x * 1.8, 0.96, -0.2), new THREE.Vector3(x * 2, 1.02, 0.18), new THREE.Vector3(x, 1.13, 0.36)]);
+    body.add(new THREE.Mesh(new THREE.TubeGeometry(curve, 20, 0.018, 8, false), mat('dark')));
+    body.add(box(0.035, 0.48, 0.02, accent, x, 1.24, 0.405));
+  }
+  for (let i = 0; i < 6; i++) body.add(box(0.2, 0.015, 0.015, 'dark', 0, 1.13 + i * 0.035, 0.405));
+  // Merge within each animated part; retain the existing animation pivots.
+  for (const part of [head, armL, armR, legL, legR]) { mergeStatic(part); part.userData.keep = true; }
+  mergeStatic(body);
   root.scale.setScalar(scale);
   root.userData.rig = { body, head, armL, armR, legL, legR, phase: 0 };
   return root;
@@ -322,11 +365,19 @@ export function makeBeacon(color = 0x4fd1ff, height = 40) {
 // ---------------- Earth launch site (game model, inspired by a launch complex) ----------------
 export function makeLaunchTower(height = 120) {
   const g = new THREE.Group();
-  g.add(box(30, 8, 30, 'grey', 0, 4, 0));   // mobile launcher platform base
+  // The solid foundation and walkable deck are supplied by LaunchPlatform.
   const tower = new THREE.Group(); tower.position.set(16, 8, 0); g.add(tower);
   for (let y = 0; y < height; y += 6) {
     tower.add(box(8, 0.4, 8, 'red', 0, y, 0));
     for (const [x, z] of [[-4, -4], [4, -4], [-4, 4], [4, 4]]) tower.add(box(0.5, 6, 0.5, 'red', x, y + 3, z));
+    for (const z of [-4, 4]) {
+      for (const sign of [-1, 1]) {
+        const brace = box(0.18, 10, 0.18, 'red', 0, y + 3, z);
+        brace.rotation.z = sign * Math.atan2(8, 6); tower.add(brace);
+      }
+      tower.add(box(8, 0.08, 0.08, 'orange', 0, y + 1.1, z));
+    }
+    tower.add(box(1.3, 6, 1.3, 'grey', 0, y + 3, 0));
   }
   // crew access arm
   const arm = box(10, 2.5, 2.5, 'grey', -8, 0, 0); arm.position.y = height * 0.82; tower.add(arm);

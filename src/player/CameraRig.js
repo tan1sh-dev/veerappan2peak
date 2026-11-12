@@ -2,7 +2,7 @@ import * as THREE from 'three';
 
 // Third/first person camera with a Roblox-style "shift lock":
 //  - Third person, shift lock OFF: free cursor, hold right mouse to orbit, character turns toward movement.
-//  - Third person, shift lock ON (Left Ctrl): cursor locked, mouse turns the camera, the character always faces
+//  - Third person, shift lock ON (tap Shift or Left Ctrl; on by default): cursor locked, mouse turns the camera, the character always faces
 //    where the camera looks, camera sits over the right shoulder.
 //  - First person (V): cursor locked, mouse look.
 export class CameraRig {
@@ -11,7 +11,7 @@ export class CameraRig {
     this.yaw = 0; this.pitch = -0.25;
     this.distance = 7; this.targetDistance = 7;
     this.mode = settings.cameraMode === 'first' ? 'first' : 'third';
-    this.shiftLock = false;
+    this.shiftLock = settings.shiftLock !== false;
     this.ground = null;
     this.eyeHeight = 1.62;
     this.shoulder = new THREE.Vector3();
@@ -19,8 +19,8 @@ export class CameraRig {
     this.first = true;
     this.vehicle = null; // when set: {distance, height}
   }
-  get locksPointer() { return this.mode === 'first' || this.shiftLock || !!(this.vehicle && this.vehicle.lockMouse); }
-  toggleShiftLock() { if (this.mode === 'third') this.shiftLock = !this.shiftLock; return this.shiftLock; }
+  get locksPointer() { return this.mode === 'first' || (this.shiftLock && !this.vehicle) || !!(this.vehicle && this.vehicle.lockMouse); }
+  toggleShiftLock() { if (this.mode === 'third') { this.shiftLock = !this.shiftLock; this.settings.shiftLock = this.shiftLock; } return this.shiftLock; }
   toggleView() { this.mode = this.mode === 'third' ? 'first' : 'third'; return this.mode; }
   /** Yaw the character should face, or null when it should turn toward movement. */
   characterYaw() { return (this.mode === 'first' || this.shiftLock) ? this.yaw : null; }

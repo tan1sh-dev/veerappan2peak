@@ -7,7 +7,7 @@ export const PRESETS = {
 
 export const DEFAULT_SETTINGS = {
   quality: 'medium', autoQuality: true, mouseSensitivity: 1.0, invertY: false, fov: 70,
-  masterVolume: 0.8, sfxVolume: 0.9, ambienceVolume: 0.6, showFps: false, cameraMode: 'third',
+  masterVolume: 0.8, sfxVolume: 0.9, ambienceVolume: 0.6, showFps: false, cameraMode: 'third', shiftLock: true,
 };
 
 export function mergeSettings(s) { return { ...DEFAULT_SETTINGS, ...(s || {}) }; }
